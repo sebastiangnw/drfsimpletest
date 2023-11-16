@@ -4,8 +4,9 @@ Django settings for drfsimplecrud project.
 """
 
 from pathlib import Path
-import dj_database_url
 import os
+import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -15,7 +16,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', default='r#7u6(8yh9+abgrtym3skqy=ww(njhuh@4a@=ys8%!dn3d&-^7')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
